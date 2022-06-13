@@ -1,6 +1,9 @@
 /* crc-node.js - NodeRed node for checking and calculating CRC values
  *
  * 2022/06/13 Stephen Houser, MIT License
+ * 
+ * https://www.npmjs.com/package/crc
+ * https://github.com/alexgorbatchev/node-crc
  */
 const crc = require('crc');
 
