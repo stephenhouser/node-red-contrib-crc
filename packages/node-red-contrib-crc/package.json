@@ -1,6 +1,6 @@
 {
 	"name": "node-red-contrib-crc",
-	"version": "0.1.0",
+	"version": "0.0.0",
 	"description": "CRC calculation and checking",
 	"keywords": [
 		"node-red",
