@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+    node-red:
+        image: nodered/node-red:latest
+        network_mode: "host"
+        environment:
+            - TZ=EST5EDT
+        volumes:
+            - ./data-linked:/data
+            - ../packages/node-red-contrib-crc:/data/node_modules/node-red-contrib-crc
+        #entrypoint: npm nodered/node-red run debug_brk
+        #entrypoint: "npm run debug_brk -- --userDir /data"

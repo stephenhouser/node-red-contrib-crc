@@ -3,11 +3,12 @@
         category: 'network',
         color: '#cce5cc',
         defaults: {
-            name: { value: '' }
+            name: { value: '' },
+			algorithm: { value: 'crc32', required: true }
         },
         inputs: 1,
         outputs: 1,
-        icon: 'font-awesome/fa-server',
+        icon: 'font-awesome/fa-check-circle',
         label: function() {
             return this.name || 'crc';
         }
@@ -16,9 +17,9 @@
 
 <script type="text/html" data-template-name="crc">
 	<div class="form-row">
-        <label for="node-config-input-algorithm">
+        <label for="node-input-algorithm">
             <i style="padding-left: 10%;" class="fa fa-sign-in"></i> Slice</label>
-        <select id="node-config-input-algorithm">
+        <select id="node-input-algorithm">
             <option value="crc1">CRC1</option>
             <option value="crc8">CRC8</option>
             <option value="crc81wire">CRC8 1-Wire</option>
